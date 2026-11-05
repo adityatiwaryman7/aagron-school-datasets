@@ -1,0 +1,58 @@
+{
+  "project_name": "Aagron Campus AI Master Dataset System",
+  "version": "1.0.0",
+  "specification_sources": [
+    "Aagron_School_AI_Master_Dataset_List.pdf",
+    "Aagron_School_Datasets_WHITE_REGENERATED.pdf"
+  ],
+  "dataset_modules": {
+    "01_autonomous_brain_and_operations": {
+      "categories_covered": 30,
+      "description": "Operational source datasets and AI decision chains for timetable substitutions, bus route logistics, laboratory safety, facility repairs, task assignment, and incident resolution.",
+      "key_schemas": {
+        "school_master_data": ["school_id", "school_name", "affiliation", "location", "grades_offered", "streams", "total_student_capacity", "current_enrollment", "total_classrooms", "laboratories", "operating_hours", "shifts"],
+        "staff_attendance_and_substitutions": ["scenario_id", "incident_type", "absent_teacher", "subject", "grade_and_section", "period", "room_no", "autonomous_brain_investigation", "recommended_resolution", "verification_status"],
+        "transportation_and_routes": ["route_id", "bus_number", "driver_name", "attendant_name", "route_name", "capacity", "students_assigned", "gps_tracker_id", "fuel_efficiency_kmpl", "current_status", "delay_minutes", "contingency_protocol"],
+        "historical_operational_problems_and_outcomes": ["case_id", "category", "incident_title", "severity_level", "root_cause_analysis", "autonomous_brain_reasoning", "executed_solution", "outcome_result", "preventative_measure", "cost_incurred_inr"]
+      }
+    },
+    "02_personal_ai_teacher_and_exam_prep": {
+      "categories_covered": 20,
+      "description": "Complete curriculum, NCERT textbooks, syllabus standards, question banks, worked steps, formula sheets, misconception diagnosis, and competitive exams (JEE Main/Advanced, NEET, CAT, CA Foundation/Inter).",
+      "key_schemas": {
+        "k12_boards": ["id", "board", "grade", "subject", "chapter", "topic", "question", "options", "correct_answer", "step_by_step_explanation", "misconception_warning", "pedagogical_hint", "bilingual_explanation_hindi"],
+        "competitive_jee_neet": ["id", "exam", "subject", "topic", "problem", "difficulty_rating", "solution_steps", "key_formula", "trap_alert", "ncert_page_reference"],
+        "management_ca_cat": ["id", "exam", "section", "topic", "stimulus_or_caselet", "question", "options", "correct_choice", "analytical_deduction", "statutory_reference", "journal_entry_or_computation"]
+      }
+    },
+    "03_student_voice_intelligence": {
+      "categories_covered": 18,
+      "description": "Student voice notes, multilingual audio transcription, Hinglish code-switching, grievance categorization, academic anxiety signals, and safeguarding triage with mandatory human escalation.",
+      "key_schemas": {
+        "student_concerns_and_safeguarding_triage": ["ticket_id", "student_identifier_anonymized", "grade_and_section", "communication_mode", "raw_audio_transcription", "language_detected", "code_switching_normalized", "sentiment_score", "primary_concern_category", "safeguarding_risk_level", "requires_immediate_human_safeguarding", "autonomous_brain_reasoning", "authorized_staff_routing", "resolution_action_taken"]
+      }
+    },
+    "04_cost_intelligence_and_optimization": {
+      "categories_covered": 25,
+      "description": "Department-level expenditures, budget vs actual variance, energy/utility consumption analytics, fleet maintenance costs, student unit economics, and verified savings projects.",
+      "key_schemas": {
+        "department_expenses_and_budget_variance": ["record_id", "financial_year", "department", "cost_head", "budgeted_amount_inr", "actual_spending_inr", "variance_inr", "variance_percentage", "ai_cost_anomaly_flag", "root_cause_explanation", "cost_saving_action_plan", "verified_annual_savings_inr"]
+      }
+    },
+    "05_expansion_strategy_and_forecasting": {
+      "categories_covered": 30,
+      "description": "School catchment demographic analysis, local competitor fee benchmarking, new section/grade feasibility, land/building capex, opex projections, and break-even enrollment simulation.",
+      "key_schemas": {
+        "campus_expansion_and_breakeven_models": ["scenario_id", "project_name", "target_region_or_city", "school_age_population_in_radius_5km", "competitor_schools_within_5km", "proposed_fee_structure_annual_inr", "target_enrolment_year_1", "capital_expenditure_capex_inr", "break_even_enrollment_students", "regulatory_affiliations_required"]
+      }
+    },
+    "06_ai_training_evaluation_and_governance": {
+      "categories_covered": 18,
+      "description": "Tool-calling episodes, multi-step Chain-of-Thought reasoning, role permissions, adversarial prompt injection tests, and bias/fairness safety benchmarks.",
+      "key_schemas": {
+        "tool_use_and_function_calling": ["episode_id", "user_prompt", "system_instruction", "tool_declarations", "model_thought", "tool_call", "tool_response", "final_model_response"],
+        "adversarial_safety_and_policy_guardrails": ["test_id", "attack_type", "malicious_or_unauthorized_input", "targeted_vulnerability", "expected_safe_behavior", "refusal_response_template"]
+      }
+    }
+  }
+}

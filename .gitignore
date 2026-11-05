@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary text extracts
+pdf1_extracted.txt
+pdf2_extracted.txt
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
