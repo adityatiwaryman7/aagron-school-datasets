@@ -105,18 +105,23 @@ Every dataset is written in standard **JSON Lines (`.jsonl`)**, making it direct
 
 ---
 
+## ⚡ 10 GB+ Massive LLM Training Corpus Extractor
+
+To extract and stream the **minimum 10 GB full-scale LLM training corpus** locally onto your disk in 50 MB shards:
+
+```bash
+# Extracts 10 GB of training data sharded into 50 MB JSONL files
+python generator_engine/extract_10gb_master_corpus.py --target-gb 10.0
+```
+
+This generates high-density training data across all domains (K-12 textbooks, JEE, NEET, CAT, CA, operations, cost analytics, student voice, and AI governance).
+
+---
+
 ## 🔄 GitHub Push Automation
 
-### Option 1: Automatic Script
-Run the automated push script with your remote repository URL:
+### Push Updates to GitHub:
 ```bash
-python scripts/push_to_github.py https://github.com/adityatiwari049/<your-repo-name>.git
+python scripts/push_to_github.py https://github.com/adityatiwaryman7/aagron-school-datasets.git
 ```
 
-### Option 2: Standard Git Commands
-```bash
-git add .
-git commit -m "feat(dataset): Aagron Campus Master AI Training Datasets & Exam Prep Engine"
-git remote add origin https://github.com/adityatiwari049/<your-repo-name>.git
-git push -u origin main
-```
